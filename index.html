@@ -3,10 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <title>RIFAH-Chamber of Commerce and Industry</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <!-- SEO Meta Tags -->
+    <title>RIFAH - Empowering SMEs and Entrepreneurs in India</title>
+    <meta
+      name="description"
+      content="RIFAH is a chamber of commerce in India dedicated to uplifting SMEs, empowering minorities, socially oppressed classes, and fostering women entrepreneurship through an interest-free economic system."
+    />
+    <meta
+      name="keywords"
+      content="RIFAH, Chamber of Commerce, SMEs, Entrepreneurship, Women Empowerment, Business Networking, Interest-Free Economic System, India"
+    />
+    <meta name="author" content="RIFAH Organization" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="RIFAH - Empowering SMEs and Entrepreneurs in India"
+    />
+    <meta
+      property="og:description"
+      content="Join RIFAH, a chamber of commerce dedicated to uplifting SMEs and empowering marginalized groups through sustainable business practices and community support."
+    />
+    <meta property="og:image" content="https://rifah.org/images/logo.png" />
+    <meta property="og:url" content="https://rifah.org" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="RIFAH - Empowering SMEs and Entrepreneurs in India"
+    />
+    <meta
+      name="twitter:description"
+      content="Join RIFAH, a chamber of commerce dedicated to uplifting SMEs and empowering marginalized groups through sustainable business practices and community support."
+    />
+    <meta name="twitter:image" content="https://rifah.org/images/logo.png" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://rifah.org" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://rifah.org/favicon.ico" type="image/x-icon" />
+
+    <!-- Additional Tags -->
+    <meta name="robots" content="index, follow" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
@@ -80,9 +124,14 @@
               <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
-              <a href="team.html" class="nav-item nav-link">Rifah Members</a>
+              <a href="members.html" class="nav-item nav-link">Rifah Members</a>
               <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">States</a>
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >District</a
+                >
                 <div class="dropdown-menu bg-light mt-2 custom-scroll">
                   <a href="#" class="dropdown-item">Karnataka</a>
                   <a href="#" class="dropdown-item">Bihar</a>
@@ -103,29 +152,33 @@
                   <a href="#" class="dropdown-item">Chhattisgarh</a>
                 </div>
               </div>
-              
+
               <style>
                 .custom-scroll {
                   max-height: 15rem;
                   overflow-y: auto;
                   overflow-x: hidden; /* Hide the bottom scrollbar */
                 }
-              
+
                 /* Customize scrollbar appearance */
                 .custom-scroll::-webkit-scrollbar {
                   width: 8px; /* Width of the scrollbar */
                 }
-              
+
                 .custom-scroll::-webkit-scrollbar-thumb {
-                  background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar */
+                  background-color: rgba(
+                    0,
+                    0,
+                    0,
+                    0.2
+                  ); /* Color of the scrollbar */
                   border-radius: 10px;
                 }
-              
+
                 .custom-scroll::-webkit-scrollbar-track {
                   background: transparent; /* Background of the scrollbar track */
                 }
               </style>
-              
 
               <div class="nav-item dropdown">
                 <a
@@ -147,7 +200,18 @@
                 </div>
               </div>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
-              <button class="btn btn-light  rounded-pill animated slideInRight">Become a Member</button>
+              <a
+                href="/membership.html"
+                class="btn btn-light memberShipBtn border border-1 rounded-pill animated slideInRight"
+              >
+                Become a Member
+              </a>
+              <style>
+                .memberShipBtn:hover {
+                  background-color: #00000044;
+                  color: white;
+                }
+              </style>
             </div>
             <!-- <butaton
               type="button"
@@ -169,7 +233,10 @@
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <div style="height: 99vh;" class="container-fluid pt-5 bg-primary hero-header mb-5">
+    <div
+      style="height: 99vh;"
+      class="container-fluid pt-5 bg-primary hero-header mb-5"
+    >
       <div class="container pt-5">
         <div class="row g-5 pt-5">
           <div
@@ -1264,10 +1331,21 @@
     </div>
     <!-- Footer End -->
 
+    <!-- !event side popup -->
+   
+    <a href="/events.html" class="btn btn-lg btn-primary eventPopUp fs-6" id="eventButton">
+      <i class="bi bi-calendar-event" style="margin-right: 5px;"></i
+      ><span>Events</span>
+    </a>
+
+   
+
+    
+
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -1278,7 +1356,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!--custom Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>

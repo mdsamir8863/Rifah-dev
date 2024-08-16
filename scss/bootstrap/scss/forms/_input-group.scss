@@ -110,7 +110,7 @@
   }
 
   $validation-messages: "";
-  @each $state in map-keys($form-validation-states) {
+  @each $state in map-keys($form-validation-District) {
     $validation-messages: $validation-messages + ":not(." + unquote($state) + "-tooltip)" + ":not(." + unquote($state) + "-feedback)";
   }
 

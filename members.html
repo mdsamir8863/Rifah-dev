@@ -37,6 +37,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
   </head>
 
   <body>
@@ -77,10 +78,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
-              <a href="members.html" class="nav-item nav-link">Rifah Members</a>
+              <a href="members.html" class="nav-item nav-link active"
+                >Rifah Members</a
+              >
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -110,6 +113,10 @@
               </div>
 
               <style>
+                /* html,body{
+                  overflow-y: hidden !important;
+                  overflow-x: hidden !important;
+                } */
                 .custom-scroll {
                   max-height: 15rem;
                   overflow-y: auto;
@@ -155,12 +162,15 @@
                   <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                 </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link active">Contact</a>
-              <a href="/membership.html" class="btn btn-light memberShipBtn border border-1 rounded-pill animated slideInRight">
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a
+                href="/membership.html"
+                class="btn btn-light memberShipBtn border border-1 rounded-pill animated slideInRight"
+              >
                 Become a Member
               </a>
               <style>
-                .memberShipBtn:hover{
+                .memberShipBtn:hover {
                   background-color: #00000044;
                   color: white;
                 }
@@ -182,6 +192,10 @@
       .dropdown-menu .dropdown-item {
         border-bottom: 1px solid rgb(202, 202, 202);
       }
+
+      .priceContainer .col-md-6{
+       margin-bottom: 1rem;
+      }
     </style>
     <!-- Navbar End -->
 
@@ -193,7 +207,7 @@
             class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5"
           >
             <h1 class="display-4 text-white mb-4 animated slideInRight">
-              Contact Us
+              Our Member
             </h1>
             <nav aria-label="breadcrumb">
               <ol
@@ -209,7 +223,7 @@
                   class="breadcrumb-item text-white active"
                   aria-current="page"
                 >
-                  Contact Us
+                  Our Team
                 </li>
               </ol>
             </nav>
@@ -258,93 +272,148 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
       <div class="container py-5">
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 500px;"
-        >
-          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-            Contact Us
-          </div>
-          <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-7">
-            <p class="text-center mb-4">
-              We’re here to help you with any questions, inquiries, or feedback.
-              At RIFAH, we value open communication and are committed to
-              providing timely and effective support to all our members and
-              visitors. Feel free to reach out to us through any of the channels
-              below.
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+              Our Members
+            </div>
+            <h1 class="mb-4">Meet Our Experienced Members</h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+              tempor eirmod magna dolore erat amet
             </p>
-            <div class="wow fadeIn" data-wow-delay="0.3s">
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
+            <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/team-1.jpg"
+                        alt=""
                       />
-                      <label for="name">Your Name</label>
+                      <h5 class="mb-0">Boris Johnson</h5>
+                      <small>Founder & CEO</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Your Email"
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/team-2.jpg"
+                        alt=""
                       />
-                      <label for="email">Your Email</label>
+                      <h5 class="mb-0">Adam Crew</h5>
+                      <small>Executive Manager</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject"
-                      />
-                      <label for="subject">Subject</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a message here"
-                        id="message"
-                        style="height: 150px;"
-                      ></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Send Message
-                    </button>
                   </div>
                 </div>
-              </form>
+              </div>
+              <div class="col-md-6 pt-md-4">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/team-3.jpg"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Kate Winslet</h5>
+                      <small>Co Founder</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/team-4.jpg"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Cody Gardner</h5>
+                      <small>Project Manager</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+    <!-- Team End -->
 
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96714.68291250926!2d-74.05953969406828!3d40.75468158321536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20Nowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1672242259543!5m2!1spl!2spl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
     <!-- Newsletter Start -->
     <!-- <div class="container-fluid bg-primary newsletter py-5">
         <div class="container">
@@ -371,7 +440,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
       <div class="container py-5">
-        <div class="row g-5">
+        <div class="row priceContainer g-5">
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="d-inline-block mb-3 rifahLink">
               <!-- <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1> -->

@@ -37,6 +37,28 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .event-button {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .event-button.active {
+        background-color: #ffffff;
+        color: black;
+      }
+      .active {
+        color: white;
+      }
+      .event-content {
+        display: none;
+      }
+      .event-content.active {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+      }
+    </style>
   </head>
 
   <body>
@@ -77,7 +99,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
               <a href="members.html" class="nav-item nav-link">Rifah Members</a>
@@ -110,6 +132,10 @@
               </div>
 
               <style>
+                /* html,body{
+                  overflow-y: hidden !important;
+                  overflow-x: hidden !important;
+                } */
                 .custom-scroll {
                   max-height: 15rem;
                   overflow-y: auto;
@@ -155,12 +181,15 @@
                   <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                 </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link active">Contact</a>
-              <a href="/membership.html" class="btn btn-light memberShipBtn border border-1 rounded-pill animated slideInRight">
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a
+                href="/membership.html"
+                class="btn btn-light memberShipBtn border border-1 rounded-pill animated slideInRight"
+              >
                 Become a Member
               </a>
               <style>
-                .memberShipBtn:hover{
+                .memberShipBtn:hover {
                   background-color: #00000044;
                   color: white;
                 }
@@ -182,6 +211,10 @@
       .dropdown-menu .dropdown-item {
         border-bottom: 1px solid rgb(202, 202, 202);
       }
+
+      .priceContainer .col-md-6 {
+        margin-bottom: 1rem;
+      }
     </style>
     <!-- Navbar End -->
 
@@ -193,7 +226,7 @@
             class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5"
           >
             <h1 class="display-4 text-white mb-4 animated slideInRight">
-              Contact Us
+              Our Events
             </h1>
             <nav aria-label="breadcrumb">
               <ol
@@ -202,22 +235,22 @@
                 <li class="breadcrumb-item">
                   <a class="text-white" href="#">Home</a>
                 </li>
-                <li class="breadcrumb-item">
+                <!-- <li class="breadcrumb-item">
                   <a class="text-white" href="#">Pages</a>
-                </li>
+                </li> -->
                 <li
                   class="breadcrumb-item text-white active"
                   aria-current="page"
                 >
-                  Contact Us
+                  Our Events
                 </li>
               </ol>
             </nav>
           </div>
           <div class="col-lg-6 align-self-end text-center text-lg-end">
             <img
-              class="img-fluid"
-              src="img/hero-img.png"
+              class="img-fluid rounded-1"
+              src="https://www.meydanfz.ae/wp-content/uploads/2021/10/Events-1024x576.png"
               alt=""
               style="max-height: 300px;"
             />
@@ -258,8 +291,18 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <!-- !event side popup -->
+
+    <a
+      href="tel:8863987825"
+      class="btn btn-lg btn-primary eventPopUp fs-6"
+      id="eventButton"
+    >
+      <i class="bi bi-telephone-fill" style="margin-right: 5px;"></i>
+      <span>Call us</span>
+    </a>
+    <!-- event start -->
+    <div class="container-fluid bg-light py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -267,84 +310,158 @@
           style="max-width: 500px;"
         >
           <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-            Contact Us
+            Our Events
           </div>
-          <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
+          <h1 class="mb-4">Explore Our Events</h1>
+          <div class="mb-4 animated slideInRight">
+            <span
+              id="current-events-tab"
+              class="btn btn-primary event-button active"
+              >Current Events</span
+            >
+            <span id="upcoming-events-tab" class="btn btn-primary event-button"
+              >Upcoming Events</span
+            >
+          </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-7">
-            <p class="text-center mb-4">
-              We’re here to help you with any questions, inquiries, or feedback.
-              At RIFAH, we value open communication and are committed to
-              providing timely and effective support to all our members and
-              visitors. Feel free to reach out to us through any of the channels
-              below.
-            </p>
-            <div class="wow fadeIn" data-wow-delay="0.3s">
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject"
-                      />
-                      <label for="subject">Subject</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a message here"
-                        id="message"
-                        style="height: 150px;"
-                      ></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+        <div class="row g-4 event-content active" id="current-events">
+          <!-- Current Event items will be inserted here dynamically -->
+        </div>
+        <div class="row g-4 event-content" id="upcoming-events">
+          <!-- Upcoming Event items will be inserted here dynamically -->
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+    <!-- event end -->
 
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96714.68291250926!2d-74.05953969406828!3d40.75468158321536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20Nowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1672242259543!5m2!1spl!2spl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
+    <!-- Add necessary JS links here -->
+    <script>
+      // Sample data for events using images from your directory
+      const events = {
+        current: [
+          {
+            img: "img/project-1.jpg",
+            title: "Current Event 1",
+            description: "An amazing event happening now",
+            category: "Technology",
+          },
+          {
+            img: "img/project-2.jpg",
+            title: "Current Event 2",
+            description: "Another current event that you should not miss",
+            category: "Business",
+          },
+          {
+            img: "img/project-2.jpg",
+            title: "Current Event 2",
+            description: "Another current event that you should not miss",
+            category: "Business",
+          },
+          {
+            img: "img/project-2.jpg",
+            title: "Current Event 2",
+            description: "Another current event that you should not miss",
+            category: "Business",
+          },
+          {
+            img: "img/project-2.jpg",
+            title: "Current Event 2",
+            description: "Another current event that you should not miss",
+            category: "Business",
+          },
+        ],
+        upcoming: [
+          {
+            img: "img/project-3.jpg",
+            title: "Upcoming Event 1",
+            description: "A glimpse into what is coming",
+            category: "Innovation",
+          },
+          {
+            img: "img/project-3.jpg",
+            title: "Upcoming Event 1",
+            description: "A glimpse into what is coming",
+            category: "Innovation",
+          },
+          {
+            img: "img/project-3.jpg",
+            title: "Upcoming Event 1",
+            description: "A glimpse into what is coming",
+            category: "Innovation",
+          },
+          {
+            img: "img/team-1.jpg",
+            title: "Upcoming Event 2",
+            description: "Exciting events planned for the future",
+            category: "Entrepreneurship",
+          },
+        ],
+      };
+
+      // Function to render events
+      function renderEvents(eventType, elementId) {
+        const eventList = document.getElementById(elementId);
+        eventList.innerHTML = "";
+
+        events[eventType].forEach((event) => {
+          const eventItem = document.createElement("div");
+          eventItem.classList.add("col-lg-4", "wow", "fadeIn");
+          eventItem.setAttribute("data-wow-delay", "0.3s");
+          eventItem.innerHTML = `
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="${event.img}" alt="${event.title}" />
+                        <a class="case-overlay text-decoration-none" href="#">
+                            <small>${event.category}</small>
+                            <h5 class="lh-base text-white mb-3">${event.title}</h5>
+                            <p class="lh-base text-white mb-3">${event.description}</p>
+                            <span class="btn btn-square btn-primary">
+                                <i class="fa fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                `;
+          eventList.appendChild(eventItem);
+        });
+      }
+
+      // Event listeners for tabs
+      document
+        .getElementById("current-events-tab")
+        .addEventListener("click", () => switchTab("current-events"));
+      document
+        .getElementById("upcoming-events-tab")
+        .addEventListener("click", () => switchTab("upcoming-events"));
+
+      // Function to switch tabs
+      function switchTab(tabId) {
+        const currentEventsTab = document.getElementById("current-events-tab");
+        const upcomingEventsTab = document.getElementById(
+          "upcoming-events-tab"
+        );
+
+        const currentEventsContent = document.getElementById("current-events");
+        const upcomingEventsContent = document.getElementById(
+          "upcoming-events"
+        );
+
+        if (tabId === "current-events") {
+          currentEventsTab.classList.add("active");
+          upcomingEventsTab.classList.remove("active");
+          currentEventsContent.classList.add("active");
+          upcomingEventsContent.classList.remove("active");
+        } else {
+          currentEventsTab.classList.remove("active");
+          upcomingEventsTab.classList.add("active");
+          currentEventsContent.classList.remove("active");
+          upcomingEventsContent.classList.add("active");
+        }
+      }
+
+      // Initial render
+      renderEvents("current", "current-events");
+      renderEvents("upcoming", "upcoming-events");
+    </script>
+
     <!-- Newsletter Start -->
     <!-- <div class="container-fluid bg-primary newsletter py-5">
         <div class="container">
@@ -371,7 +488,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
       <div class="container py-5">
-        <div class="row g-5">
+        <div class="row priceContainer g-5">
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="d-inline-block mb-3 rifahLink">
               <!-- <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1> -->

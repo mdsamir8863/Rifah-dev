@@ -880,8 +880,8 @@ $form-feedback-icon-invalid-color:  $form-feedback-invalid-color !default;
 $form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>") !default;
 // scss-docs-end form-feedback-variables
 
-// scss-docs-start form-validation-states
-$form-validation-states: (
+// scss-docs-start form-validation-District
+$form-validation-District: (
   "valid": (
     "color": $form-feedback-valid-color,
     "icon": $form-feedback-icon-valid
@@ -891,7 +891,7 @@ $form-validation-states: (
     "icon": $form-feedback-icon-invalid
   )
 ) !default;
-// scss-docs-end form-validation-states
+// scss-docs-end form-validation-District
 
 // Z-index master list
 //

@@ -27,6 +27,30 @@
   bottom: 45px;
   z-index: 99;
 }
+.eventPopUp {
+  position: fixed;
+  right: 0px;
+  bottom: 225px;
+  z-index: 99;
+  width: 7.3rem;
+  height: 3rem;
+  background-color: black;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 2rem 0px 0rem 2rem;
+}
+
+#eventButton {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#eventButton.hidden {
+  opacity: 0;
+}
 
 /*** Heading ***/
 h1,
@@ -125,13 +149,13 @@ h6,
   padding: 6px 10px;
   border-radius: 10px;
 }
-.rifahLogo{
-    width: 8rem;
+.rifahLogo {
+  width: 8rem;
 }
 @media (max-width: 577px) {
-    .rifahLogo{
-        width: 7rem;
-    }
+  .rifahLogo {
+    width: 7rem;
+  }
   .navbar-brand img {
     width: 7rem !important;
   }
